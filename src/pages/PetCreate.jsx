@@ -8,18 +8,18 @@ const PetCreate = () => {
   const { addPet } = useContext(PetContext);
   const navigate = useNavigate();
 
-  // Configuración de estrellas (150 para mejor cobertura)
+  // Configuración de estrellas
   const stars = Array.from({ length: 150 }).map((_, i) => ({
     id: i,
-    size: Math.random() * 1.5 + 0.5, // Tamaño más pequeño
+    size: Math.random() * 1.8 + 0.8,
     left: `${Math.random() * 100}%`,
     top: `${Math.random() * 100}%`,
-    opacity: Math.random() * 0.5 + 0.3, // Brillo moderado
+    opacity: Math.random() * 0.8 + 0.3,
     delay: `${Math.random() * 5}s`,
-    duration: `${Math.random() * 3 + 2}s`
+    duration: `${Math.random() * 4 + 3}s`
   }));
 
-  // Meteoritos mejorados (5 con diferentes características)
+  // Meteoritos
   const meteors = [
     { id: 1, top: '20%', delay: '0s', duration: '4s', size: '2px', color: 'rgba(255,200,200,0.8)' },
     { id: 2, top: '35%', delay: '6s', duration: '3s', size: '1px', color: 'rgba(200,220,255,0.9)' },
@@ -63,7 +63,7 @@ const PetCreate = () => {
         ))}
       </div>
 
-      {/* Meteoritos realistas */}
+      {/* Meteoritos */}
       <div className="absolute inset-0 overflow-hidden">
         {meteors.map(meteor => (
           <div
@@ -71,8 +71,9 @@ const PetCreate = () => {
             className="absolute meteor animate-meteor"
             style={{
               top: meteor.top,
+              width: '20px',
               height: meteor.size,
-              background: `linear-gradient(90deg, transparent, ${meteor.color}, transparent)`,
+              background: `linear-gradient(100deg, transparent, ${meteor.color}, transparent)`,
               animationDelay: meteor.delay,
               animationDuration: meteor.duration,
               filter: `drop-shadow(0 0 2px ${meteor.color})`
@@ -81,16 +82,16 @@ const PetCreate = () => {
         ))}
       </div>
 
-      {/* Contenido principal */}
+      {/* Contenido principal - FORMULARIO GRANDE */}
       <div className="relative z-10">
-        <div className="py-8 px-4">
-          <h1 className="text-3xl font-bold text-white text-center drop-shadow-lg mb-6">
+        <div className="py-12 px-4"> {/* Aumentado padding */}
+          <h1 className="text-4xl font-bold text-white text-center mb-8 drop-shadow-lg"> {/* Texto más grande */}
             Crear Nueva Mascota Interestelar
           </h1>
         </div>
 
-        <div className="flex justify-center items-center p-4">
-          <div className="w-full max-w-2xl bg-gray-800/70 backdrop-blur-sm rounded-xl p-6 border border-purple-400/30 shadow-lg">
+        <div className="flex justify-center items-start p-4 min-h-[70vh]"> {/* Contenedor más alto */}
+          <div className="w-full max-w-4xl bg-gray-800/90 backdrop-blur-md rounded-xl p-8 border-2 border-purple-400/40 shadow-xl"> {/* Contenedor más grande */}
             <PetForm 
               onSubmit={handleSubmit}
               submitText="Crear Mascota"
