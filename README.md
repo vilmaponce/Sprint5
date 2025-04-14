@@ -1,32 +1,67 @@
-# Mascotas Interestelares 🚀🐾
+🚀 Mascotas Interestelares - Gestión Galáctica de Mascotas
 
-Aplicación CRUD para gestión de mascotas con temática espacial, desarrollada con React, Vite y TailwindCSS.
+"Donde cada mascota encuentra su constelación"
 
-## Características
 
-- CRUD completo de mascotas interestelares
-- Diseño responsive con TailwindCSS
-- Animaciones y efectos visuales
-- Confirmaciones con SweetAlert2
-- Notificaciones con react-toastify
+🛠 Tecnologías
+Tecnología	
+Uso
+React 18	Biblioteca principal
+Vite 4	Bundler y entorno de desarrollo
+TailwindCSS 3	Estilización
+React Router 6	Navegación
+Axios	Peticiones HTTP
+SweetAlert2	Alertas interactivas
+Framer Motion	Animaciones
 
-## Tecnologías
 
-- React
-- Vite
-- TailwindCSS
-- React Router
-- Context API
-- Axios
-- SweetAlert2
-- react-toastify
 
-## Instalación
+🌟 Características
 
-1. Clona el repositorio
-2. Instala dependencias: `npm install`
-3. Ejecuta el servidor de desarrollo: `npm run dev`
+✨ CRUD Completo de Mascotas Interestelares  
+🪐 Diseño Responsive con Temática Espacial  
+🚀 Animaciones y Efectos Visuales  
+📡 Conexión con MockAPI  
+🔍 Validación de Formularios  
+🎨 Paleta de Colores Galáctica  
+📂 Estructura del Proyecto
 
-## Demo
 
-[Ver en vivo](https://tunombre-mascotas-interestelares.netlify.app)
+public/
+├── images/          # Assets visuales
+├── videos/          # Videos de fondo (galaxy.mp4)
+└── favicon.ico      # Ícono de la aplicación
+
+src/
+├── components/
+│   ├── Footer.jsx   # Pie de página estelar
+│   ├── Header.jsx   # Navegación galáctica
+│   ├── LoadingPlanet.jsx  # Animación de carga
+│   ├── PetCard.jsx  # Tarjeta de mascota
+│   └── PetForm.jsx  # Formulario reutilizable
+│
+├── context/
+│   └── PetContext.jsx  # Estado global
+│
+├── pages/
+│   ├── Home.jsx     # Página de inicio
+│   ├── NotFound.jsx # Página 404
+│   ├── PetCreate.jsx # Creación
+│   ├── PetDetail.jsx # Detalle
+│   ├── PetEdit.jsx  # Edición
+│   └── PetList.jsx  # Listado
+│
+├── Router/
+│   └── AppRouter.jsx # Configuración de rutas
+│
+├── services/
+│   └── api.js       # Conexión API
+│
+├── utils/
+│   ├── petSchema.js # Validaciones
+│   ├── swalConfig.js # Alertas
+│   └── toastConfig.js # Notificaciones
+│
+├── App.css          # Estilos base
+├── App.jsx          # Componente principal
+└── main.jsx         # Punto de entrada

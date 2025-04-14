@@ -129,6 +129,7 @@ const PetDetail = () => {
                 <h3 className="text-lg font-semibold text-purple-400 mb-2">Información Básica</h3>
                 <p className="text-gray-300"><span className="font-medium">Edad:</span> {pet.age} años</p>
                 <p className="text-gray-300"><span className="font-medium">Planeta:</span> {pet.planet}</p>
+                <p className="text-gray-300"><span className="font-medium">Autor:"Vilma Ponce"</span></p>
                 <p className="text-gray-300">
                   <span className="font-medium">Estado:</span>
                   <span className={`ml-2 px-2 py-0.5 rounded-full text-xs ${pet.isAdopted ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'

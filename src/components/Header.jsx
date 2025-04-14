@@ -67,7 +67,7 @@ const Header = () => {
           <nav className="hidden md:flex space-x-6 items-center">
             <Link to="/" className="text-white hover:text-pink-300 transition-colors font-medium">Inicio</Link>
             <Link to="/pets" className="text-white hover:text-pink-300 transition-colors font-medium">Mascotas</Link>
-            <Link to="/pets/create" className="px-4 py-2 bg-pink-600 hover:bg-pink-700 rounded-full transition-all font-medium">
+            <Link to="/pets/create" className="px-4 py-2 bg-purple-500 hover:bg-purple-700 rounded-full transition-all font-medium">
               + Agregar
             </Link>
           </nav>
@@ -92,7 +92,7 @@ const Header = () => {
             </Link>
             <Link
               to="/pets/create"
-              className="mt-2 mb-4 px-6 py-3 bg-pink-600 hover:bg-pink-700 rounded-full text-center text-white font-medium text-lg shadow-md"
+              className="mt-2 mb-4 px-6 py-3 bg-purple-600 hover:bg-purple-800 rounded-full text-center text-white font-medium text-lg shadow-md"
               onClick={() => setIsMenuOpen(false)}
             >
               + Agregar Mascota
