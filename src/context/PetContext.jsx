@@ -4,7 +4,7 @@ import { getPets, getPetById, createPet, updatePet, deletePet } from '../service
 import { showSuccessToast, showErrorToast } from '../utils/toastConfig';
 import Swal from 'sweetalert2';
 
-export const PetContext = createContext();
+export const PetContext = createContext();//contexto para manejar todo lo relacionado con mascotas (cargar, agregar, editar, eliminar, adoptar).
 
 export const PetProvider = ({ children }) => {
   const [pets, setPets] = useState([]);
@@ -234,5 +234,15 @@ export const PetProvider = ({ children }) => {
     >
       {children}
     </PetContext.Provider>
+
+    
   );
+};
+
+export const usePetContext = () => {
+  const context = useContext(PetContext);
+  if (!context) {
+    throw new Error('usePetContext debe usarse dentro de un PetProvider');
+  }
+  return context;
 };
