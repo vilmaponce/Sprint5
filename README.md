@@ -3,7 +3,7 @@
 "Donde cada mascota encuentra su constelación"
 
 
-🧰 ###Tecnologías y Librerías Utilizadas
+🧰 ***Tecnologías y Librerías Utilizadas***
 
 
 ##React 18	Biblioteca principal para construir la interfaz de usuario de forma declarativa y basada en componentes.
@@ -17,7 +17,7 @@
 
 
 
-🌟 ###Características
+🌟 ***Características***
 
 ✨ CRUD Completo de Mascotas Interestelares  
 🪐 Diseño Responsive con Temática Espacial  
@@ -28,7 +28,7 @@
 📂 Estructura del Proyecto
 
 
-🗂️ ###Estructura del Proyecto
+🗂️ **Estructura del Proyecto**
 La organización del proyecto sigue una estructura clara y modular:
 
 ```
@@ -62,9 +62,9 @@ Sprint5/
 ```
 
 🔄 Comunicación entre Componentes y Flujo de Datos
-``Contexto Global (PetContext.jsx):``
+**Contexto Global (PetContext.jsx):**
 
-``Utiliza la API de Context de React para manejar el estado global relacionado con las mascotas.
+Utiliza la API de Context de React para manejar el estado global relacionado con las mascotas.
 
 Proporciona funciones y datos a los componentes hijos sin necesidad de prop drilling.
 
@@ -104,20 +104,20 @@ PetForm.jsx: Formulario utilizado tanto para crear como para editar mascotas.
 
 LoadingPlanet.jsx: Animación que se muestra durante la carga de datos.``
 
-🌐 ##Interacción con la API
-``Peticiones HTTP:
+🌐**Interacción con la API**
+*Peticiones HTTP:*
 
 Se realizan mediante Axios a una API RESTful.
 
 Las operaciones incluyen:
 
-GET: Obtener la lista de mascotas o detalles de una mascota específica.
+**GET:** Obtener la lista de mascotas o detalles de una mascota específica.
 
-POST: Crear una nueva mascota.
+**POST:** Crear una nueva mascota.
 
-PUT: Actualizar la información de una mascota existente.
+**PUT:** Actualizar la información de una mascota existente.
 
-DELETE: Eliminar una mascota.
+**DELETE:** Eliminar una mascota.
 
 Manejo de Respuestas:
 
@@ -125,25 +125,25 @@ Las respuestas exitosas actualizan el estado global mediante el contexto.
 
 Los errores se manejan mostrando alertas interactivas con SweetAlert2.``
 
-🎨 ##Estilización y Animaciones
+🎨 **Estilización y Animaciones**
 ``Tailwind CSS (última versión):
 
 Se utiliza para aplicar estilos de manera eficiente y mantener un diseño responsivo.
 
 Facilita la creación de una interfaz coherente y atractiva con clases utilitarias.
 
-Framer Motion:
+*Framer Motion:*
 
 Añade animaciones suaves y atractivas a los componentes.
 
 Mejora la experiencia del usuario al interactuar con la aplicación.``
 
-✅ ##Validación y Alertas
-``Validación de Formularios:
+✅ **Validación y Alertas**
+*Validación de Formularios:*
 
 Se implementa para asegurar que los datos ingresados por el usuario sean correctos antes de enviarlos a la API.
 
-SweetAlert2:
+*SweetAlert2:*
 
 Se utiliza para mostrar alertas y confirmaciones de acciones, como la eliminación de una mascota o la confirmación de creación/edición exitosa.``
 
