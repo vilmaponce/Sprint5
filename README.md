@@ -5,14 +5,19 @@
 
 🧰 ***Tecnologías y Librerías Utilizadas***
 
+*React 18*	Biblioteca principal para construir la interfaz de usuario de forma declarativa y basada en componentes.
 
-##React 18	Biblioteca principal para construir la interfaz de usuario de forma declarativa y basada en componentes.
-##Vite 4	Herramienta de bundling y entorno de desarrollo rápido para proyectos modernos de frontend.
-##Tailwind CSS 3	Framework de utilidades para estilizar componentes de manera eficiente y responsiva.
-##React Router 6	Manejo de rutas y navegación entre diferentes vistas de la aplicación.
-##Axios	Cliente HTTP para realizar peticiones a APIs de manera sencilla.
-##SweetAlert2	Librería para mostrar alertas y diálogos interactivos y personalizables.
-##Framer Motion	Librería para agregar animaciones fluidas y atractivas a los componentes de React.
+*Vite 4*	Herramienta de bundling y entorno de desarrollo rápido para proyectos modernos de frontend.
+
+*Tailwind CSS 4*	Framework de utilidades para estilizar componentes de manera eficiente y responsiva.
+
+*React Router 6*	Manejo de rutas y navegación entre diferentes vistas de la aplicación.
+
+*Axios*	Cliente HTTP para realizar peticiones a APIs de manera sencilla.
+
+*SweetAlert2*	Librería para mostrar alertas y diálogos interactivos y personalizables.
+
+*Framer Motion*	Librería para agregar animaciones fluidas y atractivas a los componentes de React.
 
 
 
@@ -29,7 +34,7 @@
 
 
 🗂️ **Estructura del Proyecto**
-La organización del proyecto sigue una estructura clara y modular:
+    -La organización del proyecto sigue una estructura clara y modular:
 
 ```
 Sprint5/
@@ -147,5 +152,5 @@ Se implementa para asegurar que los datos ingresados por el usuario sean correct
 
 Se utiliza para mostrar alertas y confirmaciones de acciones, como la eliminación de una mascota o la confirmación de creación/edición exitosa.``
 
-🧪 ##Pruebas y Despliegue 
+🧪Pruebas y Despliegue 
 ``Netlify``
